@@ -18,12 +18,22 @@ function gridSetup() {
     for (let i = 0; i < boxCount; i++) {
         const gridBox = document.createElement('div');
         gridBox.setAttribute('style', `width: ${wh}; height: ${wh}`);
-        gridBox.setAttribute('id', `box${i}`);
+        gridBox.setAttribute('id', 'box');
         container.appendChild(gridBox);
     }
-    
+
     let preGrid = document.querySelectorAll('.preGrid');
     preGrid.forEach((item) => {
-        item.style.display = 'none'
+        item.style.display = 'none';
     });
+
+   const squares = document.querySelectorAll('#box');
+    squares.forEach((square) => {
+        square.addEventListener('mouseover', function(e) {
+            this.classList.toggle('color');
+        })});
 }
+
+    
+    
+ 

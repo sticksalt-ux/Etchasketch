@@ -1,9 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    align-content: center;
     height: 100vh;
 }
 
@@ -13,4 +12,14 @@ body {
     border-style: solid;
     border-color: rgb(80, 80, 80);
     display: grid;
+    margin-top: 15vh;
+}
+
+.color {
+    background-color: black;
+}
+
+.startContainer {
+    display: grid;
+    place-items: center;
 }
